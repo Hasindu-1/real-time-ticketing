@@ -1,7 +1,9 @@
 
 import './App.css';
 import Configure from './Components/Configure';
+import StartStop from './Components/StartStop';
 import Navbar from './page-Items/Navbar';
+ 
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <header className="App-header">
         <Navbar></Navbar>
         <Configure></Configure>
+        <StartStop></StartStop>
+        
        
       </header>
     </div>

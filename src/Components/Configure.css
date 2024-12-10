@@ -27,7 +27,7 @@ form {
   }
   
   /* Style input fields */
-  form .form-control {
+  form .box {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@ form {
   }
   
   /* Highlight input on focus */
-  form .form-control:focus {
+  form .box:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -64,9 +64,6 @@ form {
   }
   
   /* Margin adjustments for form groups */
-  .form-group {
-    margin-bottom: 15px;
-  }
   
   /* Responsive design for smaller screens */
   @media (max-width: 480px) {

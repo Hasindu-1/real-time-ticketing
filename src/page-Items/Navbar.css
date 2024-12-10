@@ -1,5 +1,6 @@
 /* Navbar container */
-.navbar {
+.header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +12,7 @@
   }
   
   /* Logo styling */
-  .navbar-logo h1 {
+  .navbar-logo {
     font-size: 24px;
     margin: 0;
     font-weight: bold;
@@ -23,17 +24,12 @@
     display: flex;
     margin: 0;
     padding: 0;
+    
+  }
+  a{
+    padding-left: 50%;
+    color:white;
+    text-decoration: none;
   }
   
-  /* Individual menu item styling */
-  .navbar-menu-item {
-    margin: 0 15px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-menu-item:hover {
-    color: #3498db; /* Light blue */
-  }
   

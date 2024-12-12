@@ -1,7 +1,7 @@
-import "./Configure.css"; //
+import "./Configure.css"; 
 import { useState } from "react"
 
-function Configuration(){
+function Configure(){
     const[formData,setFormData] = useState({
             totalTickets:"",
             ticketReleaseRate:"",
@@ -43,7 +43,7 @@ function Configuration(){
         <form onSubmit={handleSubmit}>
             <div className="form">
             <h2>Configuration Form</h2>
-            <div className="form-items">
+            <div className="formItem">
                 <label htmlFor="totalTicket">Total Tickets : </label>
                 <br/>
                 <input
@@ -55,8 +55,8 @@ function Configuration(){
                 onChange={handleChange}
                 required />
             </div>
-            <div className="form-items">
-                <label htmlFor="ticketReleaseRate">Ticket Release Rate : </label>
+            <div className="formItem">
+                <label htmlFor="ticketReleaseRate">Ticket Release Rate (ms): </label>
                 <br/>
                 <input 
                 className="box"
@@ -67,8 +67,8 @@ function Configuration(){
                 onChange={handleChange}
                 required />
             </div>
-            <div className="form-items">
-                <label htmlFor="customerRetrievalRate">Customer Retrieval Rate : </label>
+            <div className="formItem">
+                <label htmlFor="customerRetrievalRate">Customer Retrieval Rate (ms): </label>
                 <br/>
                 <input 
                 className="box"
@@ -79,7 +79,7 @@ function Configuration(){
                 onChange={handleChange}
                 required />
             </div>
-            <div className="form-items">
+            <div className="formItem">
                 <label htmlFor="maxTicketCapacity">Max Ticket Capacity : </label>
                 <br/>
                 <input 
@@ -92,7 +92,7 @@ function Configuration(){
                 required />
             </div>
            
-            <button className="save-button" type="submit">Save Configuration</button>
+            <button className="savebuT" type="submit">Save Configuration</button>
             </div>
         </form>
         
@@ -100,4 +100,4 @@ function Configuration(){
     );
 
 }
-export default Configuration
+export default Configure

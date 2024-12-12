@@ -8,14 +8,14 @@ function LogsDisplay(){
 
     useEffect(() =>{
         const intervalId = setInterval(() =>{
-            fetchMessages();
+            fetchList();
 
         },100);
         
         return() => clearInterval(intervalId);
     },[]);
 
-    const fetchMessages = async () => {
+    const fetchList = async () => {
         try{
             const response = await fetch("http://localhost:8080/logs/get");
             if(response.ok){
@@ -31,9 +31,9 @@ function LogsDisplay(){
     };
 
     return(
-    <div className="Ticket-display">
-    <h1 className="ticketpool-header">Ticket Pool</h1>
-        <div className="Ticket-Pool">
+    <div className="Logsdisplay">
+    <h1 className="log-header">LogsDisplay</h1>
+        <div className="log">
             <ul className="message">
                {message.map((message,index) => (
                 <li className="messages" key={index}>{message}</li>

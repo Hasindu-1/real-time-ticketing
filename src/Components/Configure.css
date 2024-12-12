@@ -1,4 +1,4 @@
-/* Center the form on the page */
+
 form {
     display: inline-block;
     background-color: #f9f9f9;
@@ -10,17 +10,16 @@ form {
     margin-left: 15%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-  }
+}
   
-  /* Style the form heading */
+
   form h2 {
     text-align: center;
-    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
   }
   
-  /* Style form labels */
+  
   form label {
     font-weight: bold;
     color: #555;
@@ -28,7 +27,7 @@ form {
     display: block;
   }
   
-  /* Style input fields */
+  
   form .box {
     width: 100%;
     padding: 10px;
@@ -40,15 +39,15 @@ form {
     box-sizing: border-box;
   }
   
-  /* Highlight input on focus */
+  
   form .box:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
   
-  /* Style the submit button */
-  form button {
+  
+  .savebut {
     width: 70%;
     margin-left: 10%;
     padding: 10px;
@@ -61,26 +60,11 @@ form {
     transition: background-color 0.3s ease;
   }
   
-  /* Button hover effect */
-  form button:hover {
+
+.savebut:hover{
     background-color: #0056b3;
-  }
+}
   
-  /* Margin adjustments for form groups */
   
-  /* Responsive design for smaller screens */
-  @media (max-width: 480px) {
-    form {
-      padding: 15px;
-      font-size: 0.9rem;
-    }
   
-    form h3 {
-      font-size: 1.2rem;
-    }
-  
-    form button {
-      font-size: 0.9rem;
-    }
-  }
   

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import  "./LogsDisplay.css";
 
-function TicketPool(){
+
+function LogsDisplay(){
 
     const[message, setMessage] = useState([]);
 
@@ -42,4 +44,4 @@ function TicketPool(){
     );
 
 }
-export default TicketPool
+export default LogsDisplay

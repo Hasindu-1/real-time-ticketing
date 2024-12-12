@@ -1,3 +1,5 @@
+import "./StartStop.css";
+
 import React, { useState } from "react";
 
 function StartStop() {
@@ -24,7 +26,7 @@ function StartStop() {
     };
 
     return (
-        <div>
+        <div className="container">
             <h1>Start Program</h1>
             <button onClick={handleStartThread} disabled={loading}>
                 {loading ? "Starting..." : "Start"}
